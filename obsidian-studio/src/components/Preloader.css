@@ -1,0 +1,55 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--black);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader__logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--white);
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.preloader__logo span {
+  color: var(--gold);
+}
+
+.preloader__bar-wrap {
+  width: 240px;
+  height: 1px;
+  background-color: #2a2a2a;
+  position: relative;
+  overflow: hidden;
+}
+
+.preloader__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--gold);
+}
+
+.preloader__percent {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.preloader__panel {
+  position: fixed;
+  inset: 0;
+  background-color: var(--black);
+  z-index: 9998;
+}
